@@ -1,1 +1,12 @@
+streamlit
+pandas
+concurrent.futures
+mnemonic
+hashlib
+hmac
+base58
+base64
+ecdsa
+pathos
+bitcoin
 
