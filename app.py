@@ -1,4 +1,3 @@
-from pyngrok import ngrok
 import streamlit as st
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor,as_completed
