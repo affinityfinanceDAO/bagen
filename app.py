@@ -11,8 +11,8 @@ import gc
 import base64
 import multiprocessing
 from pathos.multiprocessing import ProcessPool
-import bitcoin as btc
-import concurrent.futures
+#import bitcoin as btc
+#import concurrent.futures
 import os
 import time
 import random
