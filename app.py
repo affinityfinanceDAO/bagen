@@ -5,10 +5,9 @@ from mnemonic import Mnemonic
 import hashlib
 import hmac
 import base58
-import base64
 import ecdsa
 import gc
-import base64
+import pybase64 as base64
 import multiprocessing
 from pathos.multiprocessing import ProcessPool
 #import bitcoin as btc
