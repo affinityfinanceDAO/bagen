@@ -7,7 +7,7 @@ import hmac
 import base58
 import ecdsa
 import gc
-import pybase64 as base64
+import base64
 import multiprocessing
 from pathos.multiprocessing import ProcessPool
 #import bitcoin as btc
