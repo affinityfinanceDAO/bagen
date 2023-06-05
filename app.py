@@ -13,7 +13,7 @@ import multiprocessing
 from pathos.multiprocessing import ProcessPool
 #import bitcoin as btc
 #import concurrent.futures
-import os
+#import os
 import time
 import random
 import gc
@@ -64,9 +64,9 @@ def main():
     st.sidebar.title("Settings")
 
 
-    number_files = st.sidebar.number_input("Number of Files", value=150, min_value=1, step=1)
+    number_files = st.sidebar.number_input("Number of Files", value=200, min_value=1, step=1)
     num_seed_phrases = st.sidebar.number_input("Number of Seed Phrases", value=1000000, min_value=1, step=100000)
-    chunk_size = st.sidebar.number_input("Number of Chunk size", value=1000, min_value=1, step=1)
+    chunk_size = st.sidebar.number_input("Number of Chunk size", value=1000000, min_value=1, step=1)
 
 
 
