@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor,as_completed
+#from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor,as_completed
 from mnemonic import Mnemonic
 import hashlib
 import hmac
@@ -78,16 +78,16 @@ def main():
                 start_time = time.time()
                 seed_phrases = [mnemonic.generate() for _ in range(num_seed_phrases)]
                 # Use ProcessPoolExecutor for parallel processing
-                with ProcessPoolExecutor() as executor:
-                    for j in range(0, num_seed_phrases, chunk_size):
-                        chunk = seed_phrases[j: j + chunk_size]
-                        results = process_seed_phrases(chunk)
+                #with ProcessPoolExecutor() as executor:
+                 for j in range(0, num_seed_phrases, chunk_size):
+                      chunk = seed_phrases[j: j + chunk_size]
+                       results = process_seed_phrases(chunk)
                         
 
  
-                        if results:
-                           #process_and_save_results(results, i+1)
-                           st.markdown(file_download(results), unsafe_allow_html=True)
+                       if results:
+                          #process_and_save_results(results, i+1)
+                          st.markdown(file_download(results), unsafe_allow_html=True)
 
 
 
